@@ -2,7 +2,6 @@ package com.novoda.dropcap.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.ColorInt;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +9,8 @@ import android.widget.EditText;
 
 import com.novoda.drop_cap.R;
 import com.novoda.dropcap.DropCapView;
+
+import androidx.annotation.ColorInt;
 
 public class DropCapActivity extends Activity {
 
@@ -30,7 +31,7 @@ public class DropCapActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drop_cap);
-        dropCapView = (DropCapView) findViewById(R.id.view_drop_cap);
+        dropCapView = findViewById(R.id.view_drop_cap);
 
         createTextSizeDialogDisplayers();
         createTextColorDialogDisplayers();
@@ -52,10 +53,10 @@ public class DropCapActivity extends Activity {
                 onCopyTextSizeChanged
         );
 
-        Button dropCapTextSizeButton = (Button) findViewById(R.id.drop_cap_size);
+        Button dropCapTextSizeButton = findViewById(R.id.drop_cap_size);
         dropCapTextSizeButton.setOnClickListener(onClickDisplayDropCapTextSizeDialog);
 
-        Button copyTextSizeButton = (Button) findViewById(R.id.copy_size);
+        Button copyTextSizeButton = findViewById(R.id.copy_size);
         copyTextSizeButton.setOnClickListener(onClickDisplayCopyTextSizeDialog);
     }
 
@@ -100,10 +101,10 @@ public class DropCapActivity extends Activity {
                 onCopyTextColorChanged
         );
 
-        Button dropCapTextColorButton = (Button) findViewById(R.id.drop_cap_color);
+        Button dropCapTextColorButton = findViewById(R.id.drop_cap_color);
         dropCapTextColorButton.setOnClickListener(onClickDisplayDropCapTextColorDialog);
 
-        Button copyTextColorButton = (Button) findViewById(R.id.copy_color);
+        Button copyTextColorButton = findViewById(R.id.copy_color);
         copyTextColorButton.setOnClickListener(onClickDisplayCopyTextColorDialog);
 
     }
@@ -149,10 +150,10 @@ public class DropCapActivity extends Activity {
                 onCopyTypefaceChanged
         );
 
-        Button dropCapTypefaceButton = (Button) findViewById(R.id.drop_cap_typeface);
+        Button dropCapTypefaceButton = findViewById(R.id.drop_cap_typeface);
         dropCapTypefaceButton.setOnClickListener(onClickDisplayDropCapTypefaceDialog);
 
-        Button copyTypefaceButton = (Button) findViewById(R.id.copy_typeface);
+        Button copyTypefaceButton = findViewById(R.id.copy_typeface);
         copyTypefaceButton.setOnClickListener(onClickDisplayCopyTypefaceDialog);
     }
 
@@ -195,7 +196,7 @@ public class DropCapActivity extends Activity {
                 onDropCapNumberChangeListener
         );
 
-        Button numberOfDropCapsButton = (Button) findViewById(R.id.drop_cap_number);
+        Button numberOfDropCapsButton = findViewById(R.id.drop_cap_number);
         numberOfDropCapsButton.setOnClickListener(onClickDisplayNumberOfDropCapsDialog);
     }
 
@@ -215,8 +216,8 @@ public class DropCapActivity extends Activity {
     };
 
     private void createTextUpdater() {
-        final EditText textUpdateEditText = (EditText) findViewById(R.id.drop_cap_edit_text);
-        Button textUpdateButton = (Button) findViewById(R.id.edit_text_update);
+        final EditText textUpdateEditText = findViewById(R.id.drop_cap_edit_text);
+        Button textUpdateButton = findViewById(R.id.edit_text_update);
 
         textUpdateButton.setOnClickListener(new View.OnClickListener() {
             @Override

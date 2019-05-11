@@ -1,6 +1,6 @@
 package com.novoda.dropcap.demo;
 
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 import com.novoda.drop_cap.R;
 
