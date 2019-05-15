@@ -30,7 +30,7 @@
 
     <Button
       android:id="@+id/drop_cap_size"
-      style="@style/Widget.MaterialComponents.Button"
+      style="@style/DropCap.Button"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="100"
@@ -38,7 +38,7 @@
 
     <Button
       android:id="@+id/copy_size"
-      style="@style/Widget.MaterialComponents.Button"
+      style="@style/DropCap.Button"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="100"
@@ -53,7 +53,7 @@
 
     <Button
       android:id="@+id/drop_cap_color"
-      style="@style/Widget.MaterialComponents.Button"
+      style="@style/DropCap.Button"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="100"
@@ -61,7 +61,7 @@
 
     <Button
       android:id="@+id/copy_color"
-      style="@style/Widget.MaterialComponents.Button"
+      style="@style/DropCap.Button"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="100"
@@ -76,7 +76,7 @@
 
     <Button
       android:id="@+id/drop_cap_typeface"
-      style="@style/Widget.MaterialComponents.Button"
+      style="@style/DropCap.Button"
       android:layout_width="0dp"
       android:layout_height="match_parent"
       android:layout_weight="100"
@@ -84,7 +84,7 @@
 
     <Button
       android:id="@+id/copy_typeface"
-      style="@style/Widget.MaterialComponents.Button"
+      style="@style/DropCap.Button"
       android:layout_width="0dp"
       android:layout_height="match_parent"
       android:layout_weight="100"
@@ -94,6 +94,7 @@
 
   <Button
     android:id="@+id/drop_cap_number"
+    style="@style/DropCap.Button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
@@ -110,6 +111,7 @@
 
   <Button
     android:id="@+id/edit_text_update"
+    style="@style/DropCap.Button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/drop_cap_update_text" />
