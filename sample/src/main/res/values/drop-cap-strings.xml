@@ -1,8 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
   <string name="app_name">DropCap</string>
 
-  <string name="drop_cap_dummy_text">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, tortor dictum hendrerit mollis, mauris
+  <!--Not a typo, this is dummy text-->
+  <string name="drop_cap_dummy_text" tools:ignore="Typos">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, tortor dictum hendrerit mollis, mauris
     odio congue nibh, non consequat lectus nisl ut sapien. Vivamus a quam vel enim ultrices bibendum eget ac tortor. In volutpat id enim eleifend
     ultrices. Sed eleifend augue sit amet lobortis dignissim. Donec id nibh porta, molestie sem et, vehicula ipsum. Pellentesque sit amet enim ut
     metus ornare sollicitudin. Praesent ut lorem ultrices elit condimentum sollicitudin id eget lorem. Nulla sit amet neque a mi mattis pellentesque
@@ -70,5 +71,6 @@
   <string name="drop_cap_edit_copy_typeface">Edit Copy Typeface</string>
   <string name="drop_cap_edit_drop_cap_number">Edit number of DropCaps</string>
   <string name="drop_cap_update_text">Update text</string>
+  <string name="drop_cap_enter_text">Enter text</string>
 
 </resources>
