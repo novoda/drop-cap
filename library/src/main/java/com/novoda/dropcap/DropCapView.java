@@ -5,14 +5,15 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.Typeface;
-import android.support.annotation.ColorInt;
-import android.support.annotation.Nullable;
 import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
 
 public class DropCapView extends View {
 
@@ -107,7 +108,7 @@ public class DropCapView extends View {
 
     public void setText(@Nullable String text) {
         if (enoughTextForDropCap(text)) {
-            dropCapText = String.valueOf(text.substring(0, numberOfDropCaps));
+            dropCapText = text.substring(0, numberOfDropCaps);
             copyText = String.valueOf(text.subSequence(dropCapText.length(), text.length()));
         } else {
             dropCapText = String.valueOf('\0');
@@ -308,7 +309,7 @@ public class DropCapView extends View {
         int lineEnd = dropCapCopyStaticLayout.getText().length();
         String remainingText = String.valueOf(dropCapCopyStaticLayout.getText().subSequence(lineStart, lineEnd));
 
-        if (copyStaticLayout == null || copyStaticLayout.getWidth() != totalWidth || !remainingText.equals(copyStaticLayout.getText())) {
+        if (copyStaticLayout == null || copyStaticLayout.getWidth() != totalWidth || !remainingText.contentEquals(copyStaticLayout.getText())) {
             copyStaticLayout = new StaticLayout(
                     remainingText,
                     copyTextPaint,

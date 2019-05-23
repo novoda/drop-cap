@@ -4,11 +4,11 @@ apply plugin: 'bintray-release'
 android {
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 28
     }
 
-    compileSdkVersion 23
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 }
 
 publish {
@@ -16,13 +16,13 @@ publish {
     repoName = 'maven'
     groupId = 'com.novoda'
     artifactId = 'drop-cap'
-    version = project.version
+    publishVersion = version
     uploadName = 'drop-cap'
-    description = 'This library can be used to create a DropCap in your app.'
+    desc = 'This library can be used to create a DropCap in your app.'
     website = 'https://github.com/novoda/spikes/tree/master/drop-cap'
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.2.1'
-    compile 'com.android.support:appcompat-v7:23.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 }

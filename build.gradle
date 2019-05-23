@@ -1,16 +1,27 @@
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.2.3'
-}
-
 allprojects {
     version = '1.1.0'
 }
 
 buildscript {
-    repositories { jcenter() }
+    repositories {
+        google()
+        jcenter()
+    }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0'
-        classpath 'com.novoda:bintray-release:0.3.4'
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.novoda:bintray-release:0.9.1'
+    }
+}
+
+wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = '5.4.1'
+}
+
+subprojects {
+    repositories {
+        google()
+        jcenter()
     }
 }
 

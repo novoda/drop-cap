@@ -16,4 +16,8 @@
     <item name="lineSpacingExtra">@dimen/drop_cap_linespacing_extra</item>
   </style>
 
+  <style name="DropCap.Button" parent="Widget.MaterialComponents.Button">
+    <item name="android:textSize">18dp</item>
+  </style>
+
 </resources>

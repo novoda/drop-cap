@@ -1,6 +1,6 @@
 package com.novoda.dropcap.demo;
 
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 
 interface OnTextColorChangeListener {
 
