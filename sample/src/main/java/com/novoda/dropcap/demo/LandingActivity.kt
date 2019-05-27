@@ -9,17 +9,24 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
+import com.novoda.drop_cap.R
 
 
 class LandingActivity : AppCompatActivity() {
+
+    private lateinit var dropCapIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(com.novoda.drop_cap.R.layout.activity_landing)
 
-        val dropCapIcon = findViewById<ImageView>(com.novoda.drop_cap.R.id.dropCapIcon)
+        dropCapIcon = findViewById<ImageView>(com.novoda.drop_cap.R.id.dropCapIcon)
+    }
 
-        val dropCapAvd = AnimatedVectorDrawableCompat.create(this, com.novoda.drop_cap.R.drawable.avd_handwriting_drop_cap)!!
+    override fun onStart() {
+        super.onStart()
+
+        val dropCapAvd = AnimatedVectorDrawableCompat.create(this, R.drawable.avd_handwriting_drop_cap)!!
         dropCapIcon.setImageDrawable(dropCapAvd)
         val mainHandler = Handler(Looper.getMainLooper())
         dropCapAvd.registerAnimationCallback(object : Animatable2Compat.AnimationCallback() {

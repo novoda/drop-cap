@@ -1,7 +1,7 @@
 <resources>
 
   <style name="AppTheme"
-    parent="Theme.AppCompat.Light.DarkActionBar" />
+    parent="Theme.AppCompat.Light.NoActionBar" />
 
   <style name="DropCap">
     <item name="android:paddingLeft">@dimen/drop_cap_padding_left</item>
@@ -16,7 +16,8 @@
     <item name="lineSpacingExtra">@dimen/drop_cap_linespacing_extra</item>
   </style>
 
-  <style name="DropCap.Button" parent="Widget.MaterialComponents.Button">
+  <style name="DropCap.Button"
+    parent="Widget.MaterialComponents.Button">
     <item name="android:textSize">18dp</item>
   </style>
 
