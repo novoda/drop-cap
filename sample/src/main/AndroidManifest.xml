@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   package="com.novoda.drop_cap">
@@ -8,20 +9,18 @@
     android:label="@string/app_name"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-
+    <activity android:name="com.novoda.dropcap.demo.LandingActivity" />
     <activity android:name="com.novoda.dropcap.demo.DropCapActivity" />
 
     <activity-alias
       android:name="activity.primary_launcher"
-      android:targetActivity="com.novoda.dropcap.demo.DropCapActivity">
-
+      android:targetActivity="com.novoda.dropcap.demo.LandingActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
+
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
-
     </activity-alias>
-
   </application>
 
 </manifest>
