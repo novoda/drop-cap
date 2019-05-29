@@ -1,7 +1,8 @@
-<animated-vector
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:aapt="http://schemas.android.com/aapt"
-  android:drawable="@drawable/vd_handwriting_drop_cap">
+  xmlns:tools="http://schemas.android.com/tools"
+  android:drawable="@drawable/vd_handwriting_drop_cap"
+  tools:targetApi="lollipop">
 
   <target android:name="d">
     <aapt:attr name="android:animation">

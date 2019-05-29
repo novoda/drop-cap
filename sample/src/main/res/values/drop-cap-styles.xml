@@ -18,7 +18,7 @@
 
   <style name="DropCap.Button"
     parent="Widget.MaterialComponents.Button">
-    <item name="android:textSize">18dp</item>
+    <item name="android:textSize">18sp</item>
   </style>
 
 </resources>
