@@ -1,9 +1,11 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
   android:name="vector"
   android:width="200dp"
   android:height="110dp"
   android:viewportHeight="110"
-  android:viewportWidth="200">
+  android:viewportWidth="200"
+  tools:ignore="VectorPath">
   <group
     android:name="novoda"
     android:scaleX="0.6"
