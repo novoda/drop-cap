@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.annotation.ColorInt;
+
 import com.novoda.drop_cap.R;
 import com.novoda.dropcap.DropCapView;
-
-import androidx.annotation.ColorInt;
 
 public class DropCapActivity extends Activity {
 

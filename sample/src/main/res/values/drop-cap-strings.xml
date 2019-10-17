@@ -1,8 +1,8 @@
 <resources>
 
-  <string name="app_name">DropCap</string>
+    <string name="app_name">DropCap</string>
 
-  <string name="drop_cap_dummy_text">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, tortor dictum hendrerit mollis, mauris
+    <string name="drop_cap_dummy_text">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat, tortor dictum hendrerit mollis, mauris
     odio congue nibh, non consequat lectus nisl ut sapien. Vivamus a quam vel enim ultrices bibendum eget ac tortor. In volutpat id enim eleifend
     ultrices. Sed eleifend augue sit amet lobortis dignissim. Donec id nibh porta, molestie sem et, vehicula ipsum. Pellentesque sit amet enim ut
     metus ornare sollicitudin. Praesent ut lorem ultrices elit condimentum sollicitudin id eget lorem. Nulla sit amet neque a mi mattis pellentesque
@@ -61,14 +61,14 @@
     nunc cursus tincidunt id id ipsum. Nullam condimentum lorem nisl, sed sagittis turpis ornare non.
   </string>
 
-  <string name="drop_cap_edit_drop_cap_size">Edit DropCap Size</string>
-  <string name="drop_cap_edit_copy_size">Edit Copy Size</string>
+    <string name="drop_cap_edit_drop_cap_size">Edit DropCap Size</string>
+    <string name="drop_cap_edit_copy_size">Edit Copy Size</string>
 
-  <string name="drop_cap_edit_drop_cap_color">Edit DropCap Color</string>
-  <string name="drop_cap_edit_copy_color">Edit Copy Color</string>
-  <string name="drop_cap_edit_drop_cap_typeface">Edit DropCap Typeface</string>
-  <string name="drop_cap_edit_copy_typeface">Edit Copy Typeface</string>
-  <string name="drop_cap_edit_drop_cap_number">Edit number of DropCaps</string>
-  <string name="drop_cap_update_text">Update text</string>
+    <string name="drop_cap_edit_drop_cap_color">Edit DropCap Color</string>
+    <string name="drop_cap_edit_copy_color">Edit Copy Color</string>
+    <string name="drop_cap_edit_drop_cap_typeface">Edit DropCap Typeface</string>
+    <string name="drop_cap_edit_copy_typeface">Edit Copy Typeface</string>
+    <string name="drop_cap_edit_drop_cap_number">Edit number of DropCaps</string>
+    <string name="drop_cap_update_text">Update text</string>
 
 </resources>
