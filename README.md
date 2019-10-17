@@ -1,4 +1,4 @@
-# DropCap [![](https://ci.novoda.com/buildStatus/icon?job=drop-cap)](https://ci.novoda.com/job/drop-cap/lastBuild/console) [![Download](https://api.bintray.com/packages/novoda/maven/drop-cap/images/download.svg) ](https://bintray.com/novoda/maven/drop-cap/_latestVersion) [![](https://raw.githubusercontent.com/novoda/novoda/master/assets/btn_apache_lisence.png)](LICENSE.txt)
+# DropCap [![](https://ci.novoda.com/buildStatus/icon?job=drop-cap)](https://ci.novoda.com/job/drop-cap/lastBuild/console) [![Download](https://api.bintray.com/packages/novoda/maven/drop-cap/images/download.svg) ](https://bintray.com/novoda/maven/drop-cap/_latestVersion) [![Apache 2.0 Licence](https://img.shields.io/github/license/novoda/drop-cap.svg)](https://github.com/novoda/drop-cap/blob/master/LICENSE)
 
 This library can be used to create a DropCap in your app! A DropCap is the first letter of a paragraph that's of a much
 bigger size than the rest that follow. The formatting is such that the DropCap spans (drops down) to cover the few lines

@@ -1,5 +1,34 @@
 apply plugin: 'com.android.library'
 apply plugin: 'bintray-release'
+apply plugin: 'com.novoda.build-properties'
+
+buildProperties {
+    cli {
+        using(project)
+    }
+    bintray {
+        def bintrayCredentials = {
+            boolean isDryRun = cli['dryRun'].or(true).boolean
+            return isDryRun ?
+                    ['bintrayOrg': 'n/a', 'bintrayRepo': 'n/a', 'bintrayUser': 'n/a', 'bintrayKey': 'n/a'] :
+                    new File("${System.getenv('BINTRAY_PROPERTIES')}")
+        }
+        using(bintrayCredentials()).or(cli)
+        description = '''This should contain the following properties:
+                        - bintrayOrg: name of the Bintray organisation to deploy the artifacts to
+                        - bintrayRepo: name of the repo of the organisation to deploy the artifacts to
+                        - bintrayUser: name of the account used to deploy the artifacts
+                        - bintrayKey: API key of the account used to deploy the artifacts
+        '''.stripIndent()
+    }
+    publish {
+        def generateVersion = {
+            return version
+        }
+        using(['version': "${generateVersion()}"])
+                .or(buildProperties.bintray)
+    }
+}
 
 android {
     defaultConfig {
@@ -16,10 +45,13 @@ android {
 }
 
 publish {
-    userOrg = 'novoda'
-    repoName = 'maven'
+    userOrg = buildProperties.publish['bintrayOrg'].string
+    repoName = buildProperties.publish['bintrayRepo'].string
     groupId = 'com.novoda'
     artifactId = 'drop-cap'
+    version = buildProperties.publish['version'].string
+    bintrayUser = buildProperties.publish['bintrayUser'].string
+    bintrayKey = buildProperties.publish['bintrayKey'].string
     publishVersion = version
     uploadName = 'drop-cap'
     desc = 'This library can be used to create a DropCap in your app.'
